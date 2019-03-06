@@ -26,9 +26,8 @@ function prependDriver (name) {
 }
 
 function removeLastDriver (name) {
-   return [ ...drivers, rivers.pop()];
-}
+   return drivers.slice(0, drivers.lenght - 1);
 
 function removeFirstDriver (name) {
-   return [drivers.shift(), ...drivers];
+   return drivers.slice(1, drivers.lenght);
 }
