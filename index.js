@@ -26,9 +26,9 @@ function prependDriver (name) {
 }
 
 function removeLastDriver (name) {
-   return [name, ...drivers];
+   return [ ...drivers, pop(drivers)];
 }
 
 function removeFirstDriver (name) {
-   return [name, ...drivers];
+   return [shift(drivers), ...drivers];
 }
